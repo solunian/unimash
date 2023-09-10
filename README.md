@@ -1,11 +1,11 @@
 # unimash
 
-A joke website as **FaceMash for "uni"-versities**. The original FaceMash 
-was aggressively mean, but highly effective in stirring humans to their primitive 
-instincts of judgement; kinda sad how that works. This will be a somewhat satirical 
+A joke website as **FaceMash for "uni"-versities**. The original FaceMash
+was aggressively mean, but highly effective in stirring humans to their primitive
+instincts of judgement; kinda sad how that works. This will be a somewhat satirical
 re-creation, but also an exercise for creating dynamic websites with external databases.
 
-Even though it has some innaccuracies, *The Social Network* is pretty epic.
+Even though it has some innaccuracies, _The Social Network_ is pretty epic.
 
 ## Dev Notes
 
