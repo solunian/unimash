@@ -1,11 +1,10 @@
 import db from "$lib/db";
-import type { PageServerLoad } from "./$types";
+import type { LayoutServerLoad } from "./$types";
 
-export const load: PageServerLoad = async () => {
+export const load: LayoutServerLoad = async () => {
   const colleges = JSON.stringify(await db.collection('colleges').find().toArray());
 
   return {
-    status: 200,
     colleges
   };
 };

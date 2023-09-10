@@ -3,7 +3,6 @@
 
   export let data: PageData;
 
-  console.log(data.status);
   const colleges = JSON.parse(data.colleges);
 </script>
 
