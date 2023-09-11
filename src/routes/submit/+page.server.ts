@@ -1,8 +1,9 @@
 import type { Actions } from "./$types";
+import { add_college } from "$lib/db";
 
 export const actions: Actions = {
   default: async ({ request }) => {
     const val = await request.formData();
-    console.log(val.get("name"), val.get("image"));
+    add_college(<string>val.get("name"), <string>val.get("image"));
   },
 };

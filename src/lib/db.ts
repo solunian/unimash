@@ -13,10 +13,10 @@ export async function get_all_colleges() {
   return await db.collection("colleges").find().toArray();
 }
 
-export async function add_college(name: string, image_link: string) {
+export function add_college(name: string, image: string) {
   db.collection("colleges").insertOne({
     name,
-    image: image_link,
+    image,
     rating: 1500,
   });
 }
