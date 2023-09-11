@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply text-xl;
+}
+
 a {
   @apply hover:underline;
 }

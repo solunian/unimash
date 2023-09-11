@@ -1,7 +1,3 @@
-<header class="bg-red-800 text-center">
-  <h1 class="py-4 text-5xl font-bold text-white">UNIMASH</h1>
-</header>
-
 <main class="mt-10 flex flex-col gap-4 px-4">
   <div class="text-center text-2xl font-bold">
     Were we let in for our looks? No. Will we judge them for theirs? Yes.
@@ -35,11 +31,4 @@
       </span>
     </div>
   </div>
-
-  <nav class="mt-16 flex flex-row justify-center gap-4 font-semibold">
-    <a href="/about">About</a>
-    <a href="/submit">Submit</a>
-    <a href="/rankings">Rankings</a>
-    <a href="/">Previous</a>
-  </nav>
 </main>

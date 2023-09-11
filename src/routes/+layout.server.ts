@@ -1,11 +1,10 @@
-import db from "$lib/db";
+import { get_all_colleges } from "$lib/db";
 import type { LayoutServerLoad } from "./$types";
 
 export const load: LayoutServerLoad = async () => {
-  const colleges = JSON.stringify(await db.collection('colleges').find().toArray());
+  const colleges = JSON.stringify(await get_all_colleges());
 
   return {
-    colleges
+    colleges,
   };
 };
-

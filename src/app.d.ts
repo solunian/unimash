@@ -5,7 +5,7 @@ declare global {
     // interface Error {}
     // interface Locals {}
     interface PageData {
-      colleges: any
+      colleges: any;
     }
     // interface Platform {}
   }
