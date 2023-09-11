@@ -2,7 +2,7 @@
   import "../app.css";
 </script>
 
-<header class="bg-red-800 py-4 text-center">
+<header class="bg-red-800 py-4 text-center mb-16">
   <a href="/" class="text-5xl font-bold text-white">UNIMASH</a>
 </header>
 

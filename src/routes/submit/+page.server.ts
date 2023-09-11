@@ -1,9 +1,23 @@
 import type { Actions } from "./$types";
 import { add_college } from "$lib/db";
+import { is_formdata_valid } from "$lib/helpers";
 
 export const actions: Actions = {
   default: async ({ request }) => {
     const val = await request.formData();
-    await add_college(<string>val.get("name"), <string>val.get("image"));
+
+    const name = <string>val.get("name");
+    const image = <string>val.get("image");
+
+    if (is_formdata_valid(name, image)) {
+      await add_college(name, image);
+      return {
+        success: true,
+      }
+    } else {
+      return {
+        success: false,
+      }
+    }
   },
 };

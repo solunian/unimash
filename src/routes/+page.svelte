@@ -8,7 +8,7 @@
   const [uni1, uni2] = get_two_random_colleges(colleges);
 </script>
 
-<main class="mt-10 flex flex-col gap-4 px-4">
+<main class="flex flex-col gap-4 px-4">
   <div class="text-center text-2xl font-bold">
     Were we let in for our looks? No. Will we judge them for theirs? Yes.
     <!-- ORIGINAL TEXT ON THE WEBSITE -->
