@@ -3,7 +3,7 @@
 
   export let data: PageData;
 
-  const colleges = JSON.parse(data.colleges);
+  const colleges: College[] = JSON.parse(data.colleges_json_str);
 </script>
 
 {#each colleges as college}

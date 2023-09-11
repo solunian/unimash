@@ -10,13 +10,13 @@ const db = client.db("unimash"); // select database
 export default db;
 
 export async function get_all_colleges() {
-  return await db.collection("colleges").find().toArray();
+  return <Promise<College>>(<unknown>await db.collection("colleges").find().toArray()); // weird typing in order to type the schema
 }
 
-export function add_college(name: string, image: string) {
-  db.collection("colleges").insertOne({
+export async function add_college(name: string, image: string) {
+  await db.collection("colleges").insertOne(<College>{
     name,
     image,
-    rating: 1500,
+    rating: 1500, // initial rating
   });
 }
