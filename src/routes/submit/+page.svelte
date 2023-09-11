@@ -5,19 +5,13 @@
 </script>
 
 <div class="flex flex-row justify-center">
-
   <form method="POST" class="flex flex-col items-center gap-2">
-    
     <!-- FORM SUBMIT STATUS -->
     {#if form?.success}
-      <div class="my-4 border w-full text-center bg-green-300">
-        successfully submitted!
-      </div>
+      <div class="my-4 w-full border bg-green-300 text-center">successfully submitted!</div>
     {:else if form?.success === false}
-    <!-- ^ this looks so ugly, darned javascript with its loose equality!! >:( -->
-      <div class="my-4 border w-full text-center bg-red-300">
-        failed to submit...
-      </div>
+      <!-- ^ this looks so ugly, darned javascript with its loose equality!! >:( -->
+      <div class="my-4 w-full border bg-red-300 text-center">failed to submit...</div>
     {/if}
 
     <label>

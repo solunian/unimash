@@ -13,5 +13,10 @@ export function get_two_random_colleges(colleges: College[]) {
 export function is_formdata_valid(name: string, image: string) {
   // name: longer than one letter, capitalized
   // image: not an empty string, links to a https resource
-  return name.length > 1 && name.charAt(0).match(/[A-Z]/) && image.length > 0 && image.startsWith("https://");
+  return (
+    name.length > 1 &&
+    name.charAt(0).match(/[A-Z]/) &&
+    image.length > 0 &&
+    image.startsWith("https://")
+  );
 }

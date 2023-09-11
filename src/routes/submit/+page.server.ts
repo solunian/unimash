@@ -13,11 +13,11 @@ export const actions: Actions = {
       await add_college(name, image);
       return {
         success: true,
-      }
+      };
     } else {
       return {
         success: false,
-      }
+      };
     }
   },
 };

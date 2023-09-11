@@ -7,6 +7,8 @@
 </script>
 
 {#each colleges as college}
-  <span>{college.name}</span>
-  <span>{college.rating}</span>
+  <div>
+    <span>{college.name}</span>
+    <span>{college.rating}</span>
+  </div>
 {/each}
