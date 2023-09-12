@@ -1,11 +1,12 @@
 export function sortColleges(colleges: College[]) {}
 
 export function get_two_random_colleges(colleges: College[]) {
-  const idx1 = Math.floor(Math.random() * colleges.length);
-  const first_uni = <College>(<unknown>colleges[idx1]);
-  colleges.splice(idx1, 1);
+  let mut_colleges = [...colleges];
+  const idx1 = Math.floor(Math.random() * mut_colleges.length);
+  const first_uni = <College>(<unknown>mut_colleges[idx1]);
+  mut_colleges.splice(idx1, 1);
 
-  const second_uni = <College>(<unknown>colleges[Math.floor(Math.random() * colleges.length)]);
+  const second_uni = <College>(<unknown>mut_colleges[Math.floor(Math.random() * mut_colleges.length)]);
 
   return [first_uni, second_uni]; // tuple destructuring!
 }
