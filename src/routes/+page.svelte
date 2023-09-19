@@ -8,10 +8,18 @@
   let [uni1, uni2] = get_two_random_colleges(colleges);
 
   const click_left_uni = () => {
+    fetch("/", {
+      method: "PUT",
+      body: JSON.stringify({ uni_a: uni1, uni_b: uni2, uni_a_won: true }),
+    });
     [uni1, uni2] = get_two_random_colleges(colleges);
   };
 
   const click_right_uni = () => {
+    fetch("/", {
+      method: "PUT",
+      body: JSON.stringify({ uni_a: uni1.name, uni_b: uni2.name, uni_a_won: false }),
+    });
     [uni1, uni2] = get_two_random_colleges(colleges);
   };
 </script>

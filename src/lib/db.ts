@@ -10,7 +10,7 @@ const db = client.db("unimash"); // select database
 export default db;
 
 export async function get_all_colleges() {
-  return <Promise<College>>(<unknown>await db.collection("colleges").find().toArray()); // weird typing in order to type the schema
+  return <Promise<College[]>>(<unknown>await db.collection("colleges").find().toArray()); // weird typing in order to type the schema
 }
 
 export async function add_college(name: string, image: string) {
@@ -19,4 +19,14 @@ export async function add_college(name: string, image: string) {
     image,
     rating: 1500, // initial rating
   });
+}
+
+export async function update_college_rating(name: string, rating_change: number) {
+  const query = { name };
+  const update = {
+    $inc: {
+      rating: rating_change,
+    },
+  };
+  await db.collection("colleges").findOneAndUpdate(query, update);
 }
