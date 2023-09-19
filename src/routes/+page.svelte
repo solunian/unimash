@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { get_two_random_colleges } from "$lib/helpers";
+  import { get_two_random_colleges, compare_colleges } from "$lib/helpers";
   import type { PageData } from "./$types";
 
   export let data: PageData;
@@ -12,6 +12,9 @@
       method: "PUT",
       body: JSON.stringify({ uni_a: uni1, uni_b: uni2, uni_a_won: true }),
     });
+    const [dRa, dRb] = compare_colleges(uni1, uni2, true);
+    uni1.rating += dRa;
+    uni2.rating += dRb;
     [uni1, uni2] = get_two_random_colleges(colleges);
   };
 
@@ -20,6 +23,9 @@
       method: "PUT",
       body: JSON.stringify({ uni_a: uni1.name, uni_b: uni2.name, uni_a_won: false }),
     });
+    const [dRa, dRb] = compare_colleges(uni1, uni2, true);
+    uni1.rating += dRa;
+    uni2.rating += dRb;
     [uni1, uni2] = get_two_random_colleges(colleges);
   };
 </script>
@@ -41,7 +47,7 @@
         <img
           src={uni1.image}
           alt={uni1.name}
-          class="aspect-video w-[28rem] select-none border border-black" />
+          class="w-[28rem] select-none border border-black" />
       </button>
 
       <span>OR</span>
@@ -50,7 +56,7 @@
         <img
           src={uni2.image}
           alt={uni2.name}
-          class="aspect-video w-[28rem] select-none border border-black" />
+          class="w-[28rem] select-none border border-black" />
       </button>
     </div>
   </div>
