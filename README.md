@@ -13,3 +13,4 @@ Even though it has some innaccuracies, _The Social Network_ is pretty epic.
 - Simple styling!!!! Thank goodness that CSS in 2003 was pretty awful
 - I debugged setting up mongodb for two hours until I realized that I pasted the URI wrong
 - using Wikipedia as the [Elo rating reference](https://en.wikipedia.org/wiki/Elo_rating_system#Theory) for pairwise comparisons
+- yolo badge?
