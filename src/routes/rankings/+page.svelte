@@ -8,12 +8,12 @@
   sort_colleges(colleges);
 </script>
 
-<div class="flex flex-row justify-center">
+<div class="flex flex-row justify-center px-4">
   <div class="flex flex-col border">
     {#each colleges as college, idx}
-      <div class="flex flex-row justify-between gap-20 border px-1">
+      <div class="flex flex-row justify-between border px-1">
         <span class="font-bold">{idx + 1}</span>
-        <span>{college.name}</span>
+        <span class="px-8">{college.name}</span>
         <span>{Math.round(college.rating)}</span>
       </div>
     {/each}
