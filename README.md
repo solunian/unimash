@@ -3,9 +3,10 @@
 A joke website as **FaceMash for "uni"-versities**. The original FaceMash
 was aggressively mean, but highly effective in stirring humans to their primitive
 instincts of judgement; kinda sad how that works. This will be a somewhat satirical
-re-creation, but also an exercise for creating dynamic websites with external databases.
+re-creation, but also an exercise for creating dynamic websites with an external database.
 
-Even though it has some innaccuracies, _The Social Network_ is pretty epic.
+Even though it has many innaccuracies, _The Social Network_ is pretty epic, and 
+it also inspired this project.
 
 ## Dev Notes
 

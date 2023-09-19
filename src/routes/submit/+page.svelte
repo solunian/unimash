@@ -22,6 +22,10 @@
       image link:<input name="image" type="text" />
     </label>
 
+    <label>
+      password:<input name="password" type="text" />
+    </label>
+
     <button type="submit" class="w-fit"> submit </button>
   </form>
 </div>
