@@ -26,7 +26,7 @@ export async function update_college_rating(name: string, rating_change: number)
   const update = {
     $inc: {
       rating: rating_change,
-    }
-  }
+    },
+  };
   await db.collection("colleges").findOneAndUpdate(query, update);
 }

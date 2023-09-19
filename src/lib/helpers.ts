@@ -22,11 +22,11 @@ export function compare_colleges(uni_a: College, uni_b: College, uni_a_won: bool
   const [Ka, Kb] = [get_k_factor(Ra), get_k_factor(Rb)];
 
   // actual score -> win = 1, lose = 0
-  const Sa = (uni_a_won) ? 1 : 0;
-  const Sb = (!uni_a_won) ? 1 : 0;
+  const Sa = uni_a_won ? 1 : 0;
+  const Sb = !uni_a_won ? 1 : 0;
 
   // new ratings
-  // Ra = Ra + Ka * (Sa - Ea); 
+  // Ra = Ra + Ka * (Sa - Ea);
   // Rb = Rb + Kb * (Sb - Eb);
 
   // change in ratings
@@ -38,7 +38,7 @@ export function compare_colleges(uni_a: College, uni_b: College, uni_a_won: bool
 
 // sorts in-place, but also return reference to array
 export function sort_colleges(colleges: College[]) {
-  return colleges.sort((a, b) => a.rating - b.rating);
+  return colleges.sort((a, b) => b.rating - a.rating); // greatest to least
 }
 
 export function get_two_random_colleges(colleges: College[]) {
