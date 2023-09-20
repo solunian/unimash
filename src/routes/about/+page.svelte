@@ -1,8 +1,19 @@
-<div class="text-center">
-  <h1>Submitting Colleges</h1>
+<div class="flex flex-row justify-center">
+  <div class="flex max-w-[42rem] flex-col gap-8 px-4">
+    <p>
+      A joke website as <b>FaceMash for "uni"-versities</b>. The original FaceMash (created by Mark
+      Zuckerberg) was aggressively mean, but highly effective in stirring humans to their primitive
+      instincts of judgement; kinda sad how that works.
+    </p>
 
-  <ul>
-    <li>The name must be longer than one letter and capitalized.</li>
-    <li>The image link must be non-empty and must start with "https://".</li>
-  </ul>
+    <p>
+      This is a somewhat satirical re-creation but also a fun exercise for creating dynamic websites
+      with an external database. Also, this website looks terrible on purpose!
+    </p>
+
+    <div>
+      github: <a href="https://github.com/solunian/unimash" class="text-blue-600"
+        >https://github.com/solunian/unimash</a>
+    </div>
+  </div>
 </div>

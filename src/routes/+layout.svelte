@@ -8,9 +8,10 @@
 
 <slot />
 
-<nav class="mt-16 flex flex-row justify-center gap-4 font-semibold">
-  <a href="/about">About</a>
+<nav class="mb-8 mt-16 flex flex-row justify-center gap-4 font-semibold">
+  <a href="/">Home</a>
   <a href="/submit">Submit</a>
-  <a href="/rankings">Rankings</a>
-  <a href="/">Previous</a>
+  <a data-sveltekit-reload href="/rankings">Rankings</a>
+  <a href="/about">About</a>
+  <!-- <a href="/">Previous</a> -->
 </nav>
