@@ -24,8 +24,9 @@ it helped inspire this project.
   - all start at 1500, using Elo rating system (no draws, only win/loss)
   - implemented in `src/lib/helpers.ts`, the math is kinda interesting
 - Submitting Colleges
+  - USING A RANDOM SCRAMBLED HASH BECAUSE DARNED RAINBOW TABLES!
   - there is a password by using a sha256 hash in the server code!
-    - probably not best practice but wtvr...
+    - definitely not best practice but wtvr...
     - only doing this because some people I gave it to spammed the database with trolls
   - also there are restrictions on the name and url
 

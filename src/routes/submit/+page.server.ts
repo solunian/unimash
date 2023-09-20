@@ -4,7 +4,7 @@ import { is_formdata_valid } from "$lib/helpers";
 import { createHash } from "crypto";
 
 // generated from a Node.js repl
-const PASSWORD_HASH = "3ba6228ed76ed5a06672795c70cdee3ba0eb01479256defcbf381cb8dbe6be1e";
+const PASSWORD_HASH = "921ebf2c4a0e7e8c9bed2652d08f209c88d3c52101f5c4da5595541468f42859";
 function hash(val: string) {
   return createHash("sha256").update(val).digest("hex");
 }
