@@ -11,7 +11,7 @@
 <div class="flex flex-row justify-center px-4">
   <div class="flex flex-col border">
     {#each colleges as college, idx}
-      <div class="flex flex-row justify-between border px-1">
+      <div class="flex flex-row justify-between border px-1 odd:bg-gray-200">
         <span class="font-bold">{idx + 1}</span>
         <span class="px-8">{college.name}</span>
         <span>{Math.round(college.rating)}</span>
